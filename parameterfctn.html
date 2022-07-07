@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Function passed as parameter to another function</title>
+    </head>
+    <body style="text-align:center;">
+        <h1 style="color:blue">Congratulations!!!</h1>
+        <button onclick="func_outer('Zemoso !!!',func_inner)">Click Here</button>
+        <script>
+            function func_inner(company)
+            {
+                return 'Welcome to '+company;
+            }
+            function func_outer(greeting,func)
+            {
+                alert(func(greeting));
+            }
+        </script>
+    </body>
+</html>

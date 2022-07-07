@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>First letters of a string</title>
+    </head>
+    <body>
+        <p><h2>An arrow function takes two arguments firstName and lastName and returns a 2 letter string that represents the first letter of both the arguments.</h2></p>
+        <p id="demo"></p>
+        <script>
+        function getFirstLetters(firstName,lastName){
+            return firstName.charAt(0)+lastName.charAt(0);
+        }
+        document.getElementById("demo").innerHTML=getFirstLetters('Roger','Waters');
+    </script>
+
+    </body>
+</html>
